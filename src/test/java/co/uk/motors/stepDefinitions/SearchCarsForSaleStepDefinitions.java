@@ -1,12 +1,15 @@
 package co.uk.motors.stepDefinitions;
 
+import co.uk.motors.pages.BasePage;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class SearchCarsForSaleStepDefinitions {
+public class SearchCarsForSaleStepDefinitions extends BasePage {
     @Given("a user is on Motors homepage")
     public void a_user_is_on_Motors_homepage() {
+        launchURL();
 
     }
 
