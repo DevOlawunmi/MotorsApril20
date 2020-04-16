@@ -11,7 +11,6 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 7,
@@ -24,17 +23,38 @@
         ]
       },
       {
-        "start_timestamp": "2020-04-16T02:16:21.697Z",
+        "start_timestamp": "2020-04-16T03:13:27.183Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6443000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.motors.hooks.Hook.setUp()"
+            }
+          }
+        ],
         "line": 20,
         "name": "Customer can search cars for sale",
         "description": "",
         "id": "search-cars-for-sale;customer-can-search-cars-for-sale;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1547000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.motors.hooks.Hook.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 10,
@@ -69,7 +89,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 12,
