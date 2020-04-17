@@ -7,7 +7,8 @@ Feature: Search cars for sale
     Given a user is on Motors homepage
 
   Scenario Outline: Customer can search cars for sale
-    When user enters "<Postcode>"
+    When user accept all cookies
+    And user enters "<Postcode>"
     And user selects "<Make>" from the vehicle make options
     And user selects "<MinPrice>" from the minimum price list
     And user selects "<MaxPrice>" from the maximum price list
