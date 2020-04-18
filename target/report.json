@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3136000000,
+              "duration": 2033000000,
               "status": "passed"
             },
             "line": 7,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-04-17T03:58:13.645Z",
+        "start_timestamp": "2020-04-18T03:39:45.791Z",
         "before": [
           {
             "result": {
-              "duration": 6383000000,
+              "duration": 6265000000,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
         "after": [
           {
             "result": {
-              "duration": 855000000,
+              "duration": 865000000,
               "status": "passed"
             },
             "match": {
@@ -56,7 +56,7 @@
         "steps": [
           {
             "result": {
-              "duration": 235000000,
+              "duration": 325000000,
               "status": "passed"
             },
             "line": 10,
@@ -68,9 +68,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator \u0027By.className: .input-field.postcode.\u0027 (tried for 10 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat co.uk.motors.pages.BasePage.waitForElementToBeDisplayed(BasePage.java:30)\r\n\tat co.uk.motors.pages.HomePage.enterPostcode(HomePage.java:35)\r\n\tat co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.user_enters(SearchCarsForSaleStepDefinitions.java:23)\r\n\tat ✽.user enters \"M400GE\"(file:///C:/workspace/MotorsApril20/src/test/java/co/uk/motors/features/SearchCarsForSale.feature:11)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".\\.input\\-field\\.postcode\\.\"}\n  (Session info: chrome\u003d81.0.4044.113)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-K0OMLE0H\u0027, ip: \u0027192.168.0.69\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.113, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\\Users\\olawu\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54562}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: a68541d1a6cf4b2ff32a7e3ca9df4c5e\n*** Element info: {Using\u003dclass name, value\u003d.input-field.postcode.}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)\r\n\tat org.openqa.selenium.By$ByClassName.findElement(By.java:389)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat co.uk.motors.pages.BasePage.waitForElementToBeDisplayed(BasePage.java:30)\r\n\tat co.uk.motors.pages.HomePage.enterPostcode(HomePage.java:35)\r\n\tat co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.user_enters(SearchCarsForSaleStepDefinitions.java:23)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
-              "duration": 20096000000,
-              "status": "failed"
+              "duration": 413000000,
+              "status": "passed"
             },
             "line": 11,
             "name": "user enters \"M400GE\"",
@@ -87,7 +86,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 283000000,
+              "status": "passed"
             },
             "line": 12,
             "name": "user selects \"Audi\" from the vehicle make options",
@@ -104,7 +104,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 260000000,
+              "status": "passed"
             },
             "line": 13,
             "name": "user selects \"£3,000\" from the minimum price list",
@@ -121,14 +122,15 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 238000000,
+              "status": "passed"
             },
             "line": 14,
-            "name": "user selects \"£12,000\" from the maximum price list",
+            "name": "user selects \"£12,500\" from the maximum price list",
             "match": {
               "arguments": [
                 {
-                  "val": "\"£12,000\"",
+                  "val": "\"£12,500\"",
                   "offset": 13
                 }
               ],
@@ -138,7 +140,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3762000000,
+              "status": "passed"
             },
             "line": 15,
             "name": "user clicks on the search button",
@@ -149,7 +152,7 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 16,
             "name": "a list of vehicle \"Audi\" in \"M400GE\" is displayed",
@@ -170,7 +173,7 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 17,
             "name": "user clicks on one of the result links",

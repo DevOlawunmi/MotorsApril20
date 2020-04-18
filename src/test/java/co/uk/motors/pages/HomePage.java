@@ -12,7 +12,7 @@ public class HomePage extends BasePage {
         PageFactory.initElements(driver, this);
     }
     //there's a space after the postcode classname
-    @FindBy (className = ".input-field.postcode.")
+    @FindBy (name = "PostCode")
     private WebElement postcodeField;
     @FindBy (xpath ="//*[@id=\"Make\"]")
     private WebElement vehicleMake;
@@ -20,7 +20,7 @@ public class HomePage extends BasePage {
     private WebElement minimumPrice;
     @FindBy (id = "MaxPrice")
     private WebElement maximumPrice;
-    @FindBy (className = ".btn.btn--expand.sp__btn btn--spinner")
+    @FindBy (className = "sp__btn-title")
     private WebElement searchButton;
     @FindBy (id = "gdprAgree")
     private WebElement acceptCookies;
