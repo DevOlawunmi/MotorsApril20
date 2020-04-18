@@ -7,7 +7,7 @@ Feature: Search cars for sale
     Given a user is on Motors homepage
 
   Scenario Outline: Customer can search cars for sale
-    When user accept all cookies
+    When user accepts all cookies
     And user enters "<Postcode>"
     And user selects "<Make>" from the vehicle make options
     And user selects "<MinPrice>" from the minimum price list
@@ -18,6 +18,6 @@ Feature: Search cars for sale
 
     Examples:
       |Postcode|Make|MinPrice|MaxPrice|
-      |M400GE|Audi|£3,000|£12,500|
-#      |AB166UP|Ford|	|	|
-#      |ST47DW|Citroen|	|£20,000|
+#      |M400GE|Audi|£3,000|£12,500|
+#      |AB166UP|Ford|£2,000|£10,000|
+      |ST47DW|Citroen|£5,000|£20,000|

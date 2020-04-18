@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>17 Apr 2020, 04:58</td>
+      <td>18 Apr 2020, 04:57</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Search cars for sale</td>
-          <td      class="passed"    >2</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >6</td>
+          <td      class="passed"    >9</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">9</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="23467000000">23.467</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="7503000000">7.503</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">Search cars for sale</span>
 
@@ -191,7 +191,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">3.136</span>
+  <span class="lead-duration duration">2.307</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -234,7 +234,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">a user is on Motors homepage</span>
 
-  <span class="lead-duration duration">3.136</span>
+  <span class="lead-duration duration">2.307</span>
 
 </div>
 
@@ -272,12 +272,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">20.331</span>
+  <span class="lead-duration duration">5.196</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Customer can search cars for sale</span>
 
@@ -288,7 +288,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details  in ">
+  <div id="element-3" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -310,7 +310,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">co.uk.motors.hooks.Hook.setUp()</span>
 
-  <span class="lead-duration duration">6.383</span>
+  <span class="lead-duration duration">6.320</span>
 
           </div>
 
@@ -327,9 +327,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -339,15 +339,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">user accept all cookies</span>
+  <span class="name">user accepts all cookies</span>
 
-  <span class="lead-duration duration">0.235</span>
+  <span class="lead-duration duration">0.148</span>
 
 </div>
 
@@ -370,11 +370,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">user enters <span class="argument">&quot;M400GE&quot;</span></span>
+  <span class="name">user enters <span class="argument">&quot;ST47DW&quot;</span></span>
 
-  <span class="lead-duration duration">20.096</span>
+  <span class="lead-duration duration">0.383</span>
 
 </div>
 
@@ -382,93 +382,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
-          <a>org.openqa.selenium.TimeoutException:</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.className: .input-field.postcode.' (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at co.uk.motors.pages.BasePage.waitForElementToBeDisplayed(BasePage.java:30)
-	at co.uk.motors.pages.HomePage.enterPostcode(HomePage.java:35)
-	at co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.user_enters(SearchCarsForSaleStepDefinitions.java:23)
-	at &#10045;.user enters &quot;M400GE&quot;(file:///C:/workspace/MotorsApril20/src/test/java/co/uk/motors/features/SearchCarsForSale.feature:11)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.\.input\-field\.postcode\.&quot;}
-  (Session info: chrome=81.0.4044.113)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-K0OMLE0H', ip: '192.168.0.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.113, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\olawu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54562}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a68541d1a6cf4b2ff32a7e3ca9df4c5e
-*** Element info: {Using=class name, value=.input-field.postcode.}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at co.uk.motors.pages.BasePage.waitForElementToBeDisplayed(BasePage.java:30)
-	at co.uk.motors.pages.HomePage.enterPostcode(HomePage.java:35)
-	at co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.user_enters(SearchCarsForSaleStepDefinitions.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -484,11 +397,11 @@ Session ID: a68541d1a6cf4b2ff32a7e3ca9df4c5e
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">user selects <span class="argument">&quot;Audi&quot;</span> from the vehicle make options</span>
+  <span class="name">user selects <span class="argument">&quot;Citroen&quot;</span> from the vehicle make options</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.269</span>
 
 </div>
 
@@ -511,11 +424,11 @@ Session ID: a68541d1a6cf4b2ff32a7e3ca9df4c5e
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">user selects <span class="argument">&quot;&pound;3,000&quot;</span> from the minimum price list</span>
+  <span class="name">user selects <span class="argument">&quot;&pound;5,000&quot;</span> from the minimum price list</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.243</span>
 
 </div>
 
@@ -538,11 +451,11 @@ Session ID: a68541d1a6cf4b2ff32a7e3ca9df4c5e
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">user selects <span class="argument">&quot;&pound;12,000&quot;</span> from the maximum price list</span>
+  <span class="name">user selects <span class="argument">&quot;&pound;20,000&quot;</span> from the maximum price list</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.224</span>
 
 </div>
 
@@ -565,11 +478,11 @@ Session ID: a68541d1a6cf4b2ff32a7e3ca9df4c5e
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user clicks on the search button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.929</span>
 
 </div>
 
@@ -592,9 +505,9 @@ Session ID: a68541d1a6cf4b2ff32a7e3ca9df4c5e
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">a list of vehicle <span class="argument">&quot;Audi&quot;</span> in <span class="argument">&quot;M400GE&quot;</span> is displayed</span>
+  <span class="name">a list of vehicle <span class="argument">&quot;Citroen&quot;</span> in <span class="argument">&quot;ST47DW&quot;</span> is displayed</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -619,7 +532,7 @@ Session ID: a68541d1a6cf4b2ff32a7e3ca9df4c5e
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user clicks on one of the result links</span>
 
@@ -650,7 +563,7 @@ Session ID: a68541d1a6cf4b2ff32a7e3ca9df4c5e
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -662,13 +575,13 @@ Session ID: a68541d1a6cf4b2ff32a7e3ca9df4c5e
 
     </div>
 
-    <div id="after-7" class="inner-level collapse collapsable-details ">
+    <div id="after-6" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">co.uk.motors.hooks.Hook.tearDown()</span>
 
-  <span class="lead-duration duration">0.855</span>
+  <span class="lead-duration duration">0.833</span>
 
           </div>
 

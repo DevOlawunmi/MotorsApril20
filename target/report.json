@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2033000000,
+              "duration": 2307000000,
               "status": "passed"
             },
             "line": 7,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-04-18T03:39:45.791Z",
+        "start_timestamp": "2020-04-18T03:57:17.201Z",
         "before": [
           {
             "result": {
-              "duration": 6265000000,
+              "duration": 6320000000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 21,
+        "line": 23,
         "name": "Customer can search cars for sale",
         "description": "",
         "id": "search-cars-for-sale;customer-can-search-cars-for-sale;;2",
         "after": [
           {
             "result": {
-              "duration": 865000000,
+              "duration": 833000000,
               "status": "passed"
             },
             "match": {
@@ -56,27 +56,27 @@
         "steps": [
           {
             "result": {
-              "duration": 325000000,
+              "duration": 148000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "user accept all cookies",
+            "name": "user accepts all cookies",
             "match": {
-              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.userAcceptAllCookies()"
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.userAcceptsAllCookies()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 413000000,
+              "duration": 383000000,
               "status": "passed"
             },
             "line": 11,
-            "name": "user enters \"M400GE\"",
+            "name": "user enters \"ST47DW\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"M400GE\"",
+                  "val": "\"ST47DW\"",
                   "offset": 12
                 }
               ],
@@ -86,15 +86,15 @@
           },
           {
             "result": {
-              "duration": 283000000,
+              "duration": 269000000,
               "status": "passed"
             },
             "line": 12,
-            "name": "user selects \"Audi\" from the vehicle make options",
+            "name": "user selects \"Citroen\" from the vehicle make options",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Audi\"",
+                  "val": "\"Citroen\"",
                   "offset": 13
                 }
               ],
@@ -104,15 +104,15 @@
           },
           {
             "result": {
-              "duration": 260000000,
+              "duration": 243000000,
               "status": "passed"
             },
             "line": 13,
-            "name": "user selects \"£3,000\" from the minimum price list",
+            "name": "user selects \"£5,000\" from the minimum price list",
             "match": {
               "arguments": [
                 {
-                  "val": "\"£3,000\"",
+                  "val": "\"£5,000\"",
                   "offset": 13
                 }
               ],
@@ -122,15 +122,15 @@
           },
           {
             "result": {
-              "duration": 238000000,
+              "duration": 224000000,
               "status": "passed"
             },
             "line": 14,
-            "name": "user selects \"£12,500\" from the maximum price list",
+            "name": "user selects \"£20,000\" from the maximum price list",
             "match": {
               "arguments": [
                 {
-                  "val": "\"£12,500\"",
+                  "val": "\"£20,000\"",
                   "offset": 13
                 }
               ],
@@ -140,7 +140,7 @@
           },
           {
             "result": {
-              "duration": 3762000000,
+              "duration": 3929000000,
               "status": "passed"
             },
             "line": 15,
@@ -155,16 +155,16 @@
               "status": "passed"
             },
             "line": 16,
-            "name": "a list of vehicle \"Audi\" in \"M400GE\" is displayed",
+            "name": "a list of vehicle \"Citroen\" in \"ST47DW\" is displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Audi\"",
+                  "val": "\"Citroen\"",
                   "offset": 18
                 },
                 {
-                  "val": "\"M400GE\"",
-                  "offset": 28
+                  "val": "\"ST47DW\"",
+                  "offset": 31
                 }
               ],
               "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.a_list_of_vehicle_in_is_displayed(java.lang.String,java.lang.String)"

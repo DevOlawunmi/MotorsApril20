@@ -55,8 +55,8 @@ searchResultPage = homePage.clickOnSearchButton();
     }
 
 
-    @When("user accept all cookies")
-    public void userAcceptAllCookies() {
+    @When("user accepts all cookies")
+    public void userAcceptsAllCookies() {
         homePage.cookieConsent();
     }
 }
