@@ -3,6 +3,7 @@ package co.uk.motors.stepDefinitions;
 import co.uk.motors.pages.BasePage;
 
 import co.uk.motors.pages.HomePage;
+import co.uk.motors.pages.ProductDetailsPage;
 import co.uk.motors.pages.SearchResultPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,6 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 public class SearchCarsForSaleStepDefinitions extends BasePage {
     HomePage homePage = PageFactory.initElements(driver, HomePage.class);
     SearchResultPage searchResultPage = PageFactory.initElements(driver, SearchResultPage.class);
+    ProductDetailsPage productDetailsPage = PageFactory.initElements(driver, ProductDetailsPage.class);
     @Given("a user is on Motors homepage")
     public void a_user_is_on_Motors_homepage() {
         launchURL();
@@ -45,13 +47,15 @@ searchResultPage = homePage.clickOnSearchButton();
     }
 
     @Then("a list of vehicle {string} in {string} is displayed")
-    public void a_list_of_vehicle_in_is_displayed(String string, String string2) {
+    public void a_list_of_vehicle_in_is_displayed(String search, String postcode) {
+searchResultPage.isCorrectURLDisplayedForSearch(search);
+searchResultPage.isSearchResultPageDisplayed();
 
     }
 
     @Then("user clicks on one of the result links")
     public void user_clicks_on_one_of_the_result_links() {
-
+productDetailsPage= searchResultPage.clickOnAnyResult();
     }
 
 

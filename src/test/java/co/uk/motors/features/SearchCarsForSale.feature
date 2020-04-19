@@ -18,6 +18,6 @@ Feature: Search cars for sale
 
     Examples:
       |Postcode|Make|MinPrice|MaxPrice|
-#      |M400GE|Audi|£3,000|£12,500|
+      |M400GE|Audi|£3,000|£12,500|
 #      |AB166UP|Ford|£2,000|£10,000|
-      |ST47DW|Citroen|£5,000|£20,000|
+#      |ST47DW|Citroen|£5,000|£20,000|
