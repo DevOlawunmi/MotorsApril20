@@ -1,6 +1,7 @@
 package co.uk.motors.pages;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import co.uk.motors.commons.DriverLib;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,10 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends BasePage {
     public HomePage (WebDriver driver){
-        this.driver = driver;
+        DriverLib.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    //there's a space after the postcode classname
+
     @FindBy (name = "PostCode")
     private WebElement postcodeField;
     @FindBy (xpath ="//*[@id=\"Make\"]")
@@ -24,13 +25,19 @@ public class HomePage extends BasePage {
     private WebElement searchButton;
     @FindBy (id = "gdprAgree")
     private WebElement acceptCookies;
+    @FindBy (xpath = "//*[@id=\"searchOptions\"]/div/div/button[3]/div[1]")
+    private WebElement sellTab;
+    @FindBy (xpath = "//*[@id=\"searchPanel\"]/section/div/section/div[1]/div/div/input")
+    private WebElement emailInputField;
+    @FindBy (xpath = "//*[@id=\"searchPanel\"]/section/div/section/div[1]/button")
+    private WebElement signUpButton;
 
     public void cookieConsent(){
         waitForElementToBeDisplayed(acceptCookies);
         acceptCookies.click();
     }
 
-
+// Search Car For Sale Methods
 public void enterPostcode(String postcode){
     waitForElementToBeDisplayed(postcodeField);
     postcodeField.clear();
@@ -50,4 +57,17 @@ public SearchResultPage clickOnSearchButton(){
     return new SearchResultPage(driver);
 }
 
+//Register to Sell a Car Methods
+
+public void clickOnSellTab(){
+        sellTab.click();
+}
+public void enterEmail(String email){
+        emailInputField.sendKeys(email);
+}
+public SignInPage clickOnSignUpButton(){
+        signUpButton.click();
+        return new SignInPage(driver);
+
+}
 }

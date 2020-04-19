@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="679779f2-b15b-4d6b-a0db-b64bdcfb7e2e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/RegisterOrSignInToSellACar.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/stepDefinitions/RegisterToSellACarSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/pages/SignInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/RegisterOrSignInToSellACar.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/RegisterOrSignInToSellACar.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/stepDefinitions/RegisterToSellACarSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/stepDefinitions/RegisterToSellACarSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-failures.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-features.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-steps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/report.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587264794183</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Register to sell car feature added and steps generated">
+      <created>1587266670966</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1587266670966</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,37 +177,38 @@
     <MESSAGE value="Search Result Page successfully displayed" />
     <MESSAGE value="Search Result Page WIP" />
     <MESSAGE value="Product Details Page Successfully Displayed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Product Details Page Successfully Displayed" />
+    <MESSAGE value="Register to sell car feature added and steps generated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Register to sell car feature added and steps generated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#Project_Structure" timestamp="1587266051438">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="72" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1587266051438" />
-    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1587264793062">
+    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1587266670483">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587264793062" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587263786239">
+    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587266670483" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587271871907">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587263786239" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1587263786239">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587271871907" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1587271871907">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587263786239" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1587263786239">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587271871907" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1587271871907">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587263786239" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1587263786239">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587271871907" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1587271871907">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587263786239" />
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1587264797829">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587271871907" />
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1587266676118">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587264797829" />
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587266676118" />
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1587091261645">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
