@@ -1,6 +1,7 @@
 package co.uk.motors.stepDefinitions;
 
 import co.uk.motors.pages.BasePage;
+import co.uk.motors.pages.CarReviewsPage;
 import co.uk.motors.pages.HomePage;
 import co.uk.motors.pages.SignInPage;
 import io.cucumber.java.en.And;
@@ -8,9 +9,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.support.PageFactory;
 
-public class RegisterToSellACarSteps extends BasePage {
+public class RegisterToSellACarANDResearchCarsSteps extends BasePage {
     HomePage homePage = PageFactory.initElements(driver, HomePage.class);
     SignInPage signInPage = PageFactory.initElements(driver, SignInPage.class);
+    CarReviewsPage carReviewsPage = PageFactory.initElements(driver, CarReviewsPage.class);
 
 
     @And("user enters valid {string}")
@@ -31,6 +33,21 @@ signInPage = homePage.clickOnSignUpButton();
     @Then("the sign in page is displayed")
     public void theSignInPageIsDisplayed() {
 signInPage.isSignInPageDisplayed();
+    }
+
+    @And("user clicks on the View Review button")
+    public void userClicksOnTheViewReviewButton() {
+homePage.clickOnReviewsTab();
+    }
+
+    @And("user clicks on Reviews")
+    public void userClicksOnReviews() {
+carReviewsPage = homePage.clickOnViewReviewsButton();
+    }
+
+    @Then("available reviews are displayed")
+    public void availableReviewsAreDisplayed() {
+
     }
 }
 

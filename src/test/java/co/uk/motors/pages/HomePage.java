@@ -34,6 +34,10 @@ public class HomePage extends BasePage {
     private WebElement signUpButton;
     @FindBy (xpath = "//*[@id=\"searchPanel\"]/section/div/section/div[2]/div/div[1]/div")
     private WebElement errorMessage;
+    @FindBy (xpath = "//*[@id=\"searchOptions\"]/div/div/button[2]/div[1]")
+    private WebElement reviewTab;
+    @FindBy(xpath = "//*[@id=\"searchPanel\"]/section/div/section/div/button")
+    private WebElement viewReviewsButton;
 
     public void cookieConsent(){
         waitForElementToBeDisplayed(acceptCookies);
@@ -74,5 +78,14 @@ public SignInPage clickOnSignUpButton(){
 
 }public void isErrorMessageDisplayed(){
         Assert.assertTrue(errorMessage.isDisplayed());
+    }
+
+    //Research Cars Methods
+    public void clickOnReviewsTab(){
+        reviewTab.click();
+    }
+    public CarReviewsPage clickOnViewReviewsButton(){
+        viewReviewsButton.click();
+        return new CarReviewsPage(driver);
     }
 }
