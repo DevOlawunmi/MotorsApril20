@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="679779f2-b15b-4d6b-a0db-b64bdcfb7e2e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/ResearchCars.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/pages/CarReviewsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/ValueMyCar.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/RegisterOrSignInToSellACar.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/RegisterOrSignInToSellACar.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/SearchCarsForSale.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/SearchCarsForSale.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/stepDefinitions/RegisterToSellACarSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/stepDefinitions/RegisterToSellACarANDResearchCarsSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-failures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-features.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-steps.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/report-feature_1362840448.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/report-feature_1362840448.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/report.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/uk/motors/runners/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/uk/motors/runners/TestRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/uk/motors/stepDefinitions/SearchCarsForSaleStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/uk/motors/stepDefinitions/SearchCarsForSaleStepDefinitions.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587348211149</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Review Cars feature added. Test passed">
+      <created>1587353395651</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1587353395651</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -201,17 +193,22 @@
     <MESSAGE value="Register to sell car feature added and steps generated" />
     <MESSAGE value="Test passed" />
     <MESSAGE value="Negative scenario added to car search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Negative scenario added to car search" />
+    <MESSAGE value="Review Cars feature added. Test passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Review Cars feature added. Test passed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#Project_Structure" timestamp="1587266051438">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="72" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1587266051438" />
-    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1587348210434">
+    <state x="497" y="216" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587354613720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587348210434" />
+    <state x="497" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1587354613720" />
+    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1587353394826">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587353394826" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587353240531">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -228,10 +225,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587353240531" />
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1587348214217">
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1587353399500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587348214217" />
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587353399500" />
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1587346814619">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
