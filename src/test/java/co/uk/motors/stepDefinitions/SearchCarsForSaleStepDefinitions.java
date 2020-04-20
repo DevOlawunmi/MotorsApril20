@@ -63,4 +63,9 @@ productDetailsPage= searchResultPage.clickOnAnyResult();
     public void userAcceptsAllCookies() {
         homePage.cookieConsent();
     }
+
+    @Then("user is prompted to enter a valid postcode")
+    public void userIsPromptedToEnterAValidPostcode() {
+homePage.isErrorMessageDisplayed();
+    }
 }

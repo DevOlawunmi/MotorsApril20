@@ -2,6 +2,7 @@ package co.uk.motors.pages;
 
 import co.uk.motors.commons.DriverLib;
 //import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,6 +32,8 @@ public class HomePage extends BasePage {
     private WebElement emailInputField;
     @FindBy (xpath = "//*[@id=\"searchPanel\"]/section/div/section/div[1]/button")
     private WebElement signUpButton;
+    @FindBy (xpath = "//*[@id=\"searchPanel\"]/section/div/section/div[2]/div/div[1]/div")
+    private WebElement errorMessage;
 
     public void cookieConsent(){
         waitForElementToBeDisplayed(acceptCookies);
@@ -69,5 +72,7 @@ public SignInPage clickOnSignUpButton(){
         signUpButton.click();
         return new SignInPage(driver);
 
-}
+}public void isErrorMessageDisplayed(){
+        Assert.assertTrue(errorMessage.isDisplayed());
+    }
 }
