@@ -1,7 +1,7 @@
 package co.uk.motors.stepDefinitions;
 
 import co.uk.motors.pages.BasePage;
-import co.uk.motors.pages.CarReviewsPage;
+import co.uk.motors.pages.ResearchCarsPage;
 import co.uk.motors.pages.HomePage;
 import co.uk.motors.pages.SignInPage;
 import io.cucumber.java.en.And;
@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 public class RegisterToSellACarANDResearchCarsSteps extends BasePage {
     HomePage homePage = PageFactory.initElements(driver, HomePage.class);
     SignInPage signInPage = PageFactory.initElements(driver, SignInPage.class);
-    CarReviewsPage carReviewsPage = PageFactory.initElements(driver, CarReviewsPage.class);
+    ResearchCarsPage researchCarsPage = PageFactory.initElements(driver, ResearchCarsPage.class);
 
 
     @And("user enters valid {string}")
@@ -42,12 +42,15 @@ homePage.clickOnReviewsTab();
 
     @And("user clicks on Reviews")
     public void userClicksOnReviews() {
-carReviewsPage = homePage.clickOnViewReviewsButton();
+researchCarsPage = homePage.clickOnViewReviewsButton();
     }
 
-    @Then("available reviews are displayed")
-    public void availableReviewsAreDisplayed() {
 
+    @Then("available reviews are displayed for {string}")
+    public void availableReviewsAreDisplayedFor(String car) {
+       researchCarsPage.isReviewPageDisplayed();
+        researchCarsPage.isCarNameDisplayedForReview(car);
+        researchCarsPage.isCorrectURLDisplayedForReview(car);
     }
 }
 

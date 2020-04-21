@@ -84,8 +84,8 @@ public SignInPage clickOnSignUpButton(){
     public void clickOnReviewsTab(){
         reviewTab.click();
     }
-    public CarReviewsPage clickOnViewReviewsButton(){
+    public ResearchCarsPage clickOnViewReviewsButton(){
         viewReviewsButton.click();
-        return new CarReviewsPage(driver);
+        return new ResearchCarsPage(driver);
     }
 }

@@ -1,4 +1,4 @@
-Feature: Customer can research cars
+Feature: Research Cars
   As a customer
   I want to be able to read car reviews
   So I can have more information
@@ -11,7 +11,7 @@ Feature: Customer can research cars
     And user clicks on Reviews
     And user selects "<Make>" from the vehicle make options
     And user clicks on the View Review button
-    Then available reviews are displayed
+    Then available reviews are displayed for "<Make>"
 
 
     Examples:
