@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="679779f2-b15b-4d6b-a0db-b64bdcfb7e2e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/pages/ResearchCarsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/RegisterOrSignInToSellACar.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/RegisterOrSignInToSellACar.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/ResearchCars.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/ResearchCars.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/pages/CarReviewsPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/stepDefinitions/RegisterToSellACarANDResearchCarsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/stepDefinitions/RegisterToSellACarANDResearchCarsSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-failures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-features.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-steps.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/pretty-cucumber/cucumber-html-reports/overview-tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/ValueMyCar.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/motors/features/ValueMyCar.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587354685826</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Research Cars Feature passed">
+      <created>1587439898974</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1587439898974</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -213,7 +209,8 @@
     <MESSAGE value="Negative scenario added to car search" />
     <MESSAGE value="Review Cars feature added. Test passed" />
     <MESSAGE value="Value my car feature added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Value my car feature added" />
+    <MESSAGE value="Research Cars Feature passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Research Cars Feature passed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#Project_Structure" timestamp="1587266051438">
@@ -228,10 +225,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="403" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1587438786320" />
-    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1587354685284">
+    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1587439897826">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587354685284" />
+    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587439897826" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587439806221">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -248,10 +245,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587439806221" />
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1587354688329">
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1587439901537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587354688329" />
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587439901537" />
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1587434630146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
