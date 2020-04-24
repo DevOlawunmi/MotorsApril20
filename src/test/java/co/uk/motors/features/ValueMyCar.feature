@@ -7,10 +7,10 @@ Feature: Value My Car
   Given a user is on Motors homepage
   And user accepts all cookies
 
-  Scenario Outline:
+  Scenario Outline: Customer can check the value of cars
     When user clicks on the valuation tab
     And user enters "<Car Reg>" of the car
-    And user enters "<Postcode>"
+    And user enters the "<Postcode>"
     And user enters value of car "<Mileage>"
     And user clicks on Value Your Car button
     Then the Car Valuation page is displayed
@@ -19,5 +19,103 @@ Feature: Value My Car
     And user clicks on This is my vehicle
     And vehicle worth is displayed
     Examples:
-      | Car Reg | Postcode | Mileage |
+
+      |Car Reg|Postcode|Mileage|
+      |VN60PKF|OL98LP  |44000  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

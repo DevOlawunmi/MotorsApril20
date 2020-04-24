@@ -1,4 +1,4 @@
-
+@ready
 Feature: Search cars for sale
   As a customer
   I want to be able to search cars for sale

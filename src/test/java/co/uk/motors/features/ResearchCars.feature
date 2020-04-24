@@ -1,3 +1,4 @@
+@ready
 Feature: Research Cars
   As a customer
   I want to be able to read car reviews

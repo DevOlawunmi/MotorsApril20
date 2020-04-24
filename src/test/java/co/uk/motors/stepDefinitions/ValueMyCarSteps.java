@@ -12,10 +12,12 @@ public class ValueMyCarSteps extends BasePage {
 
     @When("user clicks on the valuation tab")
     public void userClicksOnTheValuationTab() {
+        homePage.clickOnValueMyCarTab();
     }
 
     @And("user enters {string} of the car")
-    public void userEntersOfTheCar(String arg0) {
+    public void userEntersOfTheCar(String carRegistration) {
+        homePage.enterCarRegistration(carRegistration);
     }
 
     @And("user enters value of car {string}")
@@ -47,6 +49,11 @@ public class ValueMyCarSteps extends BasePage {
     @And("vehicle worth is displayed")
     public void vehicleWorthIsDisplayed() {
             }
+
+    @And("user enters the {string}")
+    public void userEntersThe(String postcode) {
+        homePage.enterPostcodeForValuation(postcode);
+    }
 }
 
 

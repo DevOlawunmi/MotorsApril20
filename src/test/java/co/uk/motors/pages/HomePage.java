@@ -38,6 +38,12 @@ public class HomePage extends BasePage {
     private WebElement reviewTab;
     @FindBy(xpath = "//*[@id=\"searchPanel\"]/section/div/section/div/button")
     private WebElement viewReviewsButton;
+    @FindBy (xpath = "//*[@id=\"searchPanel\"]/section/div/section/div/div/div[1]/input")
+    private WebElement enterReg;
+    @FindBy (xpath = "//*[@id=\"searchOptions\"]/div/div/button[4]/div[1]")
+    private WebElement valueMyCarTab;
+    @FindBy (xpath = "//*[@id=\"searchPanel\"]/section/div/section/div/div/div[2]/input")
+    private WebElement postcodeForValuation;
 
     public void cookieConsent(){
         waitForElementToBeDisplayed(acceptCookies);
@@ -87,5 +93,17 @@ public SignInPage clickOnSignUpButton(){
     public ResearchCarsPage clickOnViewReviewsButton(){
         viewReviewsButton.click();
         return new ResearchCarsPage(driver);
+    }
+
+    //Value My Car Methods
+    public void enterCarRegistration(String carRegistration){
+       // waitForElementToBeDisplayed(enterReg);
+        enterReg.sendKeys(carRegistration);
+    }
+    public void clickOnValueMyCarTab(){
+        valueMyCarTab.click();
+    }
+    public void enterPostcodeForValuation(String postcode){
+        postcodeForValuation.sendKeys(postcode);
     }
 }
