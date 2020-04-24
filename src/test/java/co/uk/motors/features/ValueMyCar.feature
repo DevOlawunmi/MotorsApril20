@@ -7,7 +7,8 @@ Feature: Value My Car
   Given a user is on Motors homepage
   And user accepts all cookies
 
-  Scenario Outline: When user clicks on the valuation tab
+  Scenario Outline:
+    When user clicks on the valuation tab
     And user enters "<Car Reg>" of the car
     And user enters "<Postcode>"
     And user enters value of car "<Mileage>"
