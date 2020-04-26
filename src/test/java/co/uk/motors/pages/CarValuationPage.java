@@ -16,6 +16,8 @@ public class CarValuationPage extends BasePage {
     private WebElement pageTitle;
     @FindBy(xpath = "//*[@id=\"vyv-form\"]/div/div[2]/button")
     private WebElement submitForm;
+    @FindBy(xpath = "//*[@id=\"valueMyVehicle\"]/div/section/ol/li[2]/section/div/div/div[2]/div/button[1]")
+    private WebElement thisIsMyCar;
 
     public void isPageTitleDisplayed(){
         Assert.assertTrue(pageTitle.isDisplayed());
@@ -27,4 +29,9 @@ public class CarValuationPage extends BasePage {
         submitForm.click();
 
     }
+    public void clickOnThisIsMyCar(){
+        thisIsMyCar.click();
+    }
+
+    //THERE IS CAPTCHA!!!!!!
 }

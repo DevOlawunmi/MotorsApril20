@@ -22,6 +22,11 @@ public class ValueMyCarSteps extends BasePage {
         homePage.enterCarRegistration(carRegistration);
     }
 
+    @And("user enters the {string}")
+    public void userEntersThe(String postcode) {
+        homePage.enterPostcodeForValuation(postcode);
+    }
+
     @And("user enters mileage of car {string}")
     public void userEntersMileageOfCar(String mileage) {
         homePage.enterCarMileage(mileage);
@@ -49,6 +54,7 @@ public class ValueMyCarSteps extends BasePage {
 
     @And("user clicks on This is my vehicle")
     public void userClicksOnThisIsMyVehicle() {
+        carValuationPage.clickOnThisIsMyCar();
 
     }
 
@@ -56,10 +62,7 @@ public class ValueMyCarSteps extends BasePage {
     public void vehicleWorthIsDisplayed() {
             }
 
-    @And("user enters the {string}")
-    public void userEntersThe(String postcode) {
-        homePage.enterPostcodeForValuation(postcode);
-    }
+
 
 
 }

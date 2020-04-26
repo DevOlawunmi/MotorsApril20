@@ -1,3 +1,5 @@
+//This feature has captcha
+
 Feature: Value My Car
   As a user
   I want to know the value of my car
