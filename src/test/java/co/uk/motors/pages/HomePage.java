@@ -44,6 +44,10 @@ public class HomePage extends BasePage {
     private WebElement valueMyCarTab;
     @FindBy (xpath = "//*[@id=\"searchPanel\"]/section/div/section/div/div/div[2]/input")
     private WebElement postcodeForValuation;
+    @FindBy (xpath = "//*[@id=\"searchPanel\"]/section/div/section/div/div/div[3]/input")
+    private WebElement mileageField;
+    @FindBy( xpath = "//*[@id=\"searchPanel\"]/section/div/section/div/button")
+    private WebElement valueYourCarButton;
 
     public void cookieConsent(){
         waitForElementToBeDisplayed(acceptCookies);
@@ -105,5 +109,12 @@ public SignInPage clickOnSignUpButton(){
     }
     public void enterPostcodeForValuation(String postcode){
         postcodeForValuation.sendKeys(postcode);
+    }
+    public void enterCarMileage(String mileage){
+        mileageField.sendKeys(mileage);
+    }
+    public CarValuationPage clickOnValueYourCarButton(){
+        valueYourCarButton.click();
+        return new CarValuationPage(driver);
     }
 }

@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2408000000,
+              "duration": 5572000000,
               "status": "passed"
             },
             "line": 7,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 237000000,
+              "duration": 122000000,
               "status": "passed"
             },
             "line": 8,
@@ -36,11 +36,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-04-24T03:38:30.667Z",
+        "start_timestamp": "2020-04-26T03:09:51.567Z",
         "before": [
           {
             "result": {
-              "duration": 6941000000,
+              "duration": 6136000000,
               "status": "passed"
             },
             "match": {
@@ -55,7 +55,7 @@
         "after": [
           {
             "result": {
-              "duration": 788000000,
+              "duration": 745000000,
               "status": "passed"
             },
             "match": {
@@ -68,7 +68,7 @@
         "steps": [
           {
             "result": {
-              "duration": 142000000,
+              "duration": 90000000,
               "status": "passed"
             },
             "line": 11,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 190000000,
+              "duration": 128000000,
               "status": "passed"
             },
             "line": 12,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 173000000,
+              "duration": 126000000,
               "status": "passed"
             },
             "line": 13,
@@ -116,23 +116,25 @@
           },
           {
             "result": {
+              "duration": 87000000,
               "status": "passed"
             },
             "line": 14,
-            "name": "user enters value of car \"44000\"",
+            "name": "user enters mileage of car \"44000\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"44000\"",
-                  "offset": 25
+                  "offset": 27
                 }
               ],
-              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.userEntersValueOfCar(java.lang.String)"
+              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.userEntersMileageOfCar(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 77000000,
               "status": "passed"
             },
             "line": 15,
@@ -144,17 +146,25 @@
           },
           {
             "result": {
+              "duration": 41000000,
               "status": "passed"
             },
             "line": 16,
-            "name": "the Car Valuation page is displayed",
+            "name": "the Car Valuation page is displayed with \"VN60PKF\"",
             "match": {
-              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.theCarValuationPageIsDisplayed()"
+              "arguments": [
+                {
+                  "val": "\"VN60PKF\"",
+                  "offset": 41
+                }
+              ],
+              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.theCarValuationPageIsDisplayedWith(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
+              "duration": 1500000000,
               "status": "passed"
             },
             "line": 17,

@@ -11,9 +11,9 @@ Feature: Value My Car
     When user clicks on the valuation tab
     And user enters "<Car Reg>" of the car
     And user enters the "<Postcode>"
-    And user enters value of car "<Mileage>"
+    And user enters mileage of car "<Mileage>"
     And user clicks on Value Your Car button
-    Then the Car Valuation page is displayed
+    Then the Car Valuation page is displayed with "<Car Reg>"
     And user clicks on Value my car
     And confirmation page is displayed
     And user clicks on This is my vehicle

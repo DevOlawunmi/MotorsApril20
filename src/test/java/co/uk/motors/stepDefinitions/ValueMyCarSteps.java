@@ -1,6 +1,7 @@
 package co.uk.motors.stepDefinitions;
 
 import co.uk.motors.pages.BasePage;
+import co.uk.motors.pages.CarValuationPage;
 import co.uk.motors.pages.HomePage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -9,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ValueMyCarSteps extends BasePage {
     HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+    CarValuationPage carValuationPage  = PageFactory.initElements(driver, CarValuationPage.class);
 
     @When("user clicks on the valuation tab")
     public void userClicksOnTheValuationTab() {
@@ -20,21 +22,25 @@ public class ValueMyCarSteps extends BasePage {
         homePage.enterCarRegistration(carRegistration);
     }
 
-    @And("user enters value of car {string}")
-    public void userEntersValueOfCar(String arg0) {
-
+    @And("user enters mileage of car {string}")
+    public void userEntersMileageOfCar(String mileage) {
+        homePage.enterCarMileage(mileage);
     }
 
     @And("user clicks on Value Your Car button")
     public void userClicksOnValueYourCarButton() {
+        carValuationPage=homePage.clickOnValueYourCarButton();
     }
+    @Then("the Car Valuation page is displayed with {string}")
+    public void theCarValuationPageIsDisplayedWith(String carReg) {
 
-    @Then("the Car Valuation page is displayed")
-    public void theCarValuationPageIsDisplayed() {
+        carValuationPage.isPageTitleDisplayed();
+        carValuationPage.isCorrectURLDisplayedForCarValuation(carReg);
     }
 
     @And("user clicks on Value my car")
     public void userClicksOnValueMyCar() {
+        carValuationPage.submitValueYourVehicleForm();
     }
 
     @And("confirmation page is displayed")
@@ -54,6 +60,8 @@ public class ValueMyCarSteps extends BasePage {
     public void userEntersThe(String postcode) {
         homePage.enterPostcodeForValuation(postcode);
     }
+
+
 }
 
 
