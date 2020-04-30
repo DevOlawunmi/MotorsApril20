@@ -1,9 +1,9 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 6,
+        "line": 7,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1847000000,
+              "duration": 4289000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "a user is on Motors homepage",
             "match": {
               "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.a_user_is_on_Motors_homepage()"
@@ -23,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 179000000,
+              "duration": 250000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "user accepts all cookies",
             "match": {
               "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.userAcceptsAllCookies()"
@@ -36,11 +36,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-04-26T03:41:54.982Z",
+        "start_timestamp": "2020-04-30T01:02:00.883Z",
         "before": [
           {
             "result": {
-              "duration": 6175000000,
+              "duration": 6273000000,
               "status": "passed"
             },
             "match": {
@@ -48,14 +48,14 @@
             }
           }
         ],
-        "line": 24,
-        "name": "Customer can check the value of cars",
+        "line": 20,
+        "name": "Customer is directed to register when they want to sell a car",
         "description": "",
-        "id": "value-my-car;customer-can-check-the-value-of-cars;;2",
+        "id": "register-or-sign-in-to-sell-a-car;customer-is-directed-to-register-when-they-want-to-sell-a-car;;2",
         "after": [
           {
             "result": {
-              "duration": 759000000,
+              "duration": 1821000000,
               "status": "passed"
             },
             "match": {
@@ -68,155 +68,544 @@
         "steps": [
           {
             "result": {
-              "duration": 95000000,
+              "duration": 158000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user clicks on the valuation tab",
+            "line": 13,
+            "name": "a user clicks on Sell",
             "match": {
-              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.userClicksOnTheValuationTab()"
+              "location": "co.uk.motors.stepDefinitions.RegisterToSellACarANDResearchCarsSteps.aUserClicksOnSell()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 142000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user enters \"VN60PKF\" of the car",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"VN60PKF\"",
-                  "offset": 12
-                }
-              ],
-              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.userEntersOfTheCar(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 116000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user enters the \"OL98LP\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OL98LP\"",
-                  "offset": 16
-                }
-              ],
-              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.userEntersThe(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 92000000,
+              "duration": 175000000,
               "status": "passed"
             },
             "line": 14,
-            "name": "user enters mileage of car \"44000\"",
+            "name": "user enters valid \"titi@mailinator.com\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"44000\"",
-                  "offset": 27
+                  "val": "\"titi@mailinator.com\"",
+                  "offset": 18
                 }
               ],
-              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.userEntersMileageOfCar(java.lang.String)"
+              "location": "co.uk.motors.stepDefinitions.RegisterToSellACarANDResearchCarsSteps.userEntersValid(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 139000000,
+              "duration": 119000000,
               "status": "passed"
             },
             "line": 15,
-            "name": "user clicks on Value Your Car button",
+            "name": "user clicks on the signUp button",
             "match": {
-              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.userClicksOnValueYourCarButton()"
+              "location": "co.uk.motors.stepDefinitions.RegisterToSellACarANDResearchCarsSteps.userClicksOnTheSignUpButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 41000000,
+              "duration": 66000000,
               "status": "passed"
             },
             "line": 16,
-            "name": "the Car Valuation page is displayed with \"VN60PKF\"",
+            "name": "the sign in page is displayed",
+            "match": {
+              "location": "co.uk.motors.stepDefinitions.RegisterToSellACarANDResearchCarsSteps.theSignInPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ready"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Register or sign in to sell a car",
+    "description": "  As a user\n  I want the ability to register\n  So I can sell my car",
+    "id": "register-or-sign-in-to-sell-a-car",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/co/uk/motors/features/RegisterOrSignInToSellACar.feature",
+    "tags": [
+      {
+        "name": "@ready",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1790000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a user is on Motors homepage",
+            "match": {
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.a_user_is_on_Motors_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user accepts all cookies",
+            "match": {
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.userAcceptsAllCookies()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-30T01:02:14.145Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5326000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.motors.hooks.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Customer can read car reviews",
+        "description": "",
+        "id": "research-cars;customer-can-read-car-reviews;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 746000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.motors.hooks.Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 69000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on Reviews",
+            "match": {
+              "location": "co.uk.motors.stepDefinitions.RegisterToSellACarANDResearchCarsSteps.userClicksOnReviews()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user selects \"Buick\" from the vehicle make options",
             "match": {
               "arguments": [
                 {
-                  "val": "\"VN60PKF\"",
-                  "offset": 41
+                  "val": "\"Buick\"",
+                  "offset": 13
                 }
               ],
-              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.theCarValuationPageIsDisplayedWith(java.lang.String)"
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.user_selects_from_the_vehicle_make_options(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 97000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user clicks on the View Review button",
+            "match": {
+              "location": "co.uk.motors.stepDefinitions.RegisterToSellACarANDResearchCarsSteps.userClicksOnTheViewReviewButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "available reviews are displayed for \"Buick\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Buick\"",
+                  "offset": 36
+                }
+              ],
+              "location": "co.uk.motors.stepDefinitions.RegisterToSellACarANDResearchCarsSteps.availableReviewsAreDisplayedFor(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ready"
+          }
+        ]
+      }
+    ],
+    "name": "Research Cars",
+    "description": "  As a customer\n  I want to be able to read car reviews\n  So I can have more information",
+    "id": "research-cars",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/co/uk/motors/features/ResearchCars.feature",
+    "tags": [
+      {
+        "name": "@ready",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2679000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a user is on Motors homepage",
+            "match": {
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.a_user_is_on_Motors_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 162000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user accepts all cookies",
+            "match": {
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.userAcceptsAllCookies()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-30T01:02:22.605Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5320000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.motors.hooks.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Customer can search cars for sale",
+        "description": "",
+        "id": "search-cars-for-sale;customer-can-search-cars-for-sale;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1663000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.motors.hooks.Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 215000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enters \"M400GE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"M400GE\"",
+                  "offset": 12
+                }
+              ],
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.user_enters(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 202000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user selects \"Audi\" from the vehicle make options",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Audi\"",
+                  "offset": 13
+                }
+              ],
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.user_selects_from_the_vehicle_make_options(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user selects \"£3,000\" from the minimum price list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£3,000\"",
+                  "offset": 13
+                }
+              ],
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.user_selects_from_the_minimum_price_list(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user selects \"£12,500\" from the maximum price list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£12,500\"",
+                  "offset": 13
+                }
+              ],
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.user_selects_from_the_maximum_price_list(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3143000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on the search button",
+            "match": {
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.user_clicks_on_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "a list of vehicle \"Audi\" in \"M400GE\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Audi\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"M400GE\"",
+                  "offset": 28
+                }
+              ],
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.a_list_of_vehicle_in_is_displayed(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1302000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user clicks on Value my car",
-            "match": {
-              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.userClicksOnValueMyCar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
+              "duration": 282000000,
               "status": "passed"
             },
             "line": 18,
-            "name": "confirmation page is displayed",
+            "name": "user clicks on one of the result links",
             "match": {
-              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.confirmationPageIsDisplayed()"
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.user_clicks_on_one_of_the_result_links()"
             },
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ready"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2309000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a user is on Motors homepage",
+            "match": {
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.a_user_is_on_Motors_homepage()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d81.0.4044.122)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-K0OMLE0H\u0027, ip: \u0027192.168.0.68\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\\Users\\olawu\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59429}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 463cde421cd1116a850d2a415f9f05b0\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat co.uk.motors.pages.CarValuationPage.clickOnThisIsMyCar(CarValuationPage.java:33)\r\n\tat co.uk.motors.stepDefinitions.ValueMyCarSteps.userClicksOnThisIsMyVehicle(ValueMyCarSteps.java:57)\r\n\tat ✽.user clicks on This is my vehicle(file:///C:/workspace/MotorsApril20/src/test/java/co/uk/motors/features/ValueMyCar.feature:19)\r\n",
-              "duration": 10080000000,
-              "status": "failed"
+              "duration": 266000000,
+              "status": "passed"
             },
-            "line": 19,
-            "name": "user clicks on This is my vehicle",
+            "line": 9,
+            "name": "user accepts all cookies",
             "match": {
-              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.userClicksOnThisIsMyVehicle()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "vehicle worth is displayed",
-            "match": {
-              "location": "co.uk.motors.stepDefinitions.ValueMyCarSteps.vehicleWorthIsDisplayed()"
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.userAcceptsAllCookies()"
             },
             "keyword": "And "
           }
         ]
+      },
+      {
+        "start_timestamp": "2020-04-30T01:02:36.700Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5301000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.motors.hooks.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Customer cannot search cars for sale without entering valid postcode",
+        "description": "",
+        "id": "search-cars-for-sale;customer-cannot-search-cars-for-sale-without-entering-valid-postcode",
+        "after": [
+          {
+            "result": {
+              "duration": 780000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.motors.hooks.Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 128000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user clicks on the search button",
+            "match": {
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.user_clicks_on_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user is prompted to enter a valid postcode",
+            "match": {
+              "location": "co.uk.motors.stepDefinitions.SearchCarsForSaleStepDefinitions.userIsPromptedToEnterAValidPostcode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ready"
+          },
+          {
+            "name": "@ignore"
+          }
+        ]
       }
     ],
-    "name": "Value My Car",
-    "description": "  As a user\n  I want to know the value of my car\n  So I can know the going rate",
-    "id": "value-my-car",
+    "name": "Search cars for sale",
+    "description": "  As a customer\n  I want to be able to search cars for sale\n  So I can get more details about the car",
+    "id": "search-cars-for-sale",
     "keyword": "Feature",
-    "uri": "file:src/test/java/co/uk/motors/features/ValueMyCar.feature",
-    "tags": []
+    "uri": "file:src/test/java/co/uk/motors/features/SearchCarsForSale.feature",
+    "tags": [
+      {
+        "name": "@ready",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

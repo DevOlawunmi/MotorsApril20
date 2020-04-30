@@ -7,7 +7,7 @@ Feature: Register or sign in to sell a car
   Background:
     Given a user is on Motors homepage
     And user accepts all cookies
-@regression
+
   Scenario Outline: Customer is directed to register when they want to sell a car
 
     When a user clicks on Sell

@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/java/co/uk/motors/features"},
         plugin = {"pretty","json:target/report.json","de.monochromata.cucumber.report.PrettyReports:target/pretty-cucumber"},
         glue = {"co/uk/motors/hooks","co/uk/motors/stepDefinitions"},
-        tags = {"not @ready"}
+        tags = {"not @captcha_fail"}
 )
 
 public class TestRunner {

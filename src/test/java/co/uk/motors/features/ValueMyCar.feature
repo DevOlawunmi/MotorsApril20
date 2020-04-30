@@ -1,5 +1,4 @@
-//This feature has captcha
-
+@captcha_fail
 Feature: Value My Car
   As a user
   I want to know the value of my car
