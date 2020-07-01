@@ -22,7 +22,7 @@ Feature: Search cars for sale
       |M400GE|Audi|£3,000|£12,500|
 #      |AB166UP|Ford|£2,000|£10,000|
 #      |ST47DW|Citroen|£5,000|£20,000|
-@ignore
-  Scenario: Customer cannot search cars for sale without entering valid postcode
-    And user clicks on the search button
-    Then user is prompted to enter a valid postcode
+#@ignore
+#  Scenario: Customer cannot search cars for sale without entering valid postcode
+#    And user clicks on the search button
+#    Then user is prompted to enter a valid postcode
